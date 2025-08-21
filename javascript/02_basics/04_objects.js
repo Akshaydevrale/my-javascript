@@ -48,5 +48,17 @@ const users = [
         email: "a@gmail.com"
     }
 ]
-
 console.log(users[0].id);  // => 1
+
+
+// Object Destructuring
+const course = {
+    coursename: "js with hitesh",
+    price: "999",
+    courseInstructor: "Hitesh Choudhary"
+}
+course.courseInstructor  // => Traditional way
+
+// Using destructuring to rename property into variable "instructor"
+const {courseInstructor: instructor} = course;
+console.log(instructor);  // => Hitesh Choudhary
